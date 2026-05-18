@@ -20,13 +20,13 @@ Every scenario is hand-crafted and loadable in one click from the **Experiment L
 
 ## Tech stack
 
-| Layer | Technology |
-|---|---|
-| UI framework | React 19 + Vite 8 |
-| Physics engine | Matter.js 0.20 |
-| Styling | Tailwind CSS v4 |
-| Icons | Lucide React |
-| Charts (upcoming) | Recharts |
+| Layer             | Technology        |
+| ----------------- | ----------------- |
+| UI framework      | React 19 + Vite 8 |
+| Physics engine    | Matter.js 0.20    |
+| Styling           | Tailwind CSS v4   |
+| Icons             | Lucide React      |
+| Charts (upcoming) | Recharts          |
 
 ---
 
@@ -72,17 +72,17 @@ npm run lint
 
 ## How to use
 
-| Action | How |
-|---|---|
-| Add a body | Select a shape tool from the left toolbar, then click on the canvas |
-| Select / move | Use the arrow tool, then drag bodies around |
-| Pan the canvas | Hold middle mouse button and drag, or use the Hand tool |
-| Zoom | Scroll the mouse wheel |
-| Connect bodies | Pick Rope, Spring, Pivot or Motor from the toolbar, then click two bodies in sequence |
-| Edit properties | Select a body — the Properties panel opens on the right. Adjust mass, friction, charge, magnetic strength, etc. |
-| Load an experiment | Click the **book icon** at the top of the toolbar to open the Experiment Library |
-| Toggle force arrows | Click the **Forces** button in the top header |
-| Pause / step | Use the Pause and Step buttons in the header |
+| Action              | How                                                                                                             |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Add a body          | Select a shape tool from the left toolbar, then click on the canvas                                             |
+| Select / move       | Use the arrow tool, then drag bodies around                                                                     |
+| Pan the canvas      | Hold middle mouse button and drag, or use the Hand tool                                                         |
+| Zoom                | Scroll the mouse wheel                                                                                          |
+| Connect bodies      | Pick Rope, Spring, Pivot or Motor from the toolbar, then click two bodies in sequence                           |
+| Edit properties     | Select a body — the Properties panel opens on the right. Adjust mass, friction, charge, magnetic strength, etc. |
+| Load an experiment  | Click the **book icon** at the top of the toolbar to open the Experiment Library                                |
+| Toggle force arrows | Click the **Forces** button in the top header                                                                   |
+| Pause / step        | Use the Pause and Step buttons in the header                                                                    |
 
 ---
 

@@ -86,6 +86,8 @@ export function onAfterUpdate(callback) {
 
 export function destroyEngine() {
   if (runner) Runner.stop(runner);
+  // Detach force ticker before clearing engine
+  _detachForceTicker?.();
   if (engine) {
     World.clear(engine.world);
     Engine.clear(engine);

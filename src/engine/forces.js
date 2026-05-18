@@ -31,8 +31,9 @@ export function attachForceTicker() {
 
 export function detachForceTicker() {
   const engine = getEngine();
-  if (!engine) return;
-  Events.off(engine, "beforeUpdate", forceTick);
+  if (engine) {
+    Events.off(engine, "beforeUpdate", forceTick);
+  }
   attached = false;
 }
 

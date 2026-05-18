@@ -84,7 +84,7 @@ export function addBody(type, options = {}) {
     case "wedge": {
       // Right-triangle wedge (trapezoid with slope=1 gives triangle shape)
       const wH = height || 100;
-      body = Bodies.trapezoid(x, y, width || 200, wH, 1, {
+      body = Bodies.trapezoid(x, y, width || 200, wH, 0.99, {
         isStatic: isStatic,
         friction,
         restitution,

@@ -128,7 +128,9 @@ export default function PhysicsCanvas({
         activeTool === "box" ||
         activeTool === "circle" ||
         activeTool === "polygon" ||
-        activeTool === "static"
+        activeTool === "static" ||
+        activeTool === "wedge" ||
+        activeTool === "incline"
       ) {
         onAddBody?.(activeTool, { x: world.x, y: world.y });
         return;
@@ -242,6 +244,8 @@ function getCursor(tool) {
     case "circle":
     case "polygon":
     case "static":
+    case "wedge":
+    case "incline":
       return "crosshair";
     case "rope":
     case "spring":
