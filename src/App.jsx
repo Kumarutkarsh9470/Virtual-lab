@@ -14,7 +14,9 @@ import {
   stepEngine,
 } from "./engine/world";
 import { addBoundaries } from "./engine/bodies";
-import { loadScenario } from "./engine/scenarios";import { clearAllSpecialConstraints } from './engine/forces';import { Play, Pause, SkipForward, RotateCcw, Eye, EyeOff } from "lucide-react";
+import { loadScenario } from "./engine/scenarios";
+import { clearAllSpecialConstraints } from "./engine/forces";
+import { Play, Pause, SkipForward, RotateCcw, Eye, EyeOff } from "lucide-react";
 
 const BODY_DEFAULTS = {
   box: { width: 60, height: 60 },
@@ -136,7 +138,7 @@ export default function App() {
 
   const handleLoadScenario = useCallback((id) => {
     setConstraintState(null);
-    setActiveTool('select');
+    setActiveTool("select");
     const bodies = loadScenario(id);
     setSelectedBody(bodies?.[0] ?? null);
     setShowScenarios(false);
